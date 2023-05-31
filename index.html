@@ -6,168 +6,129 @@
   <meta name="viewport" content="width=device-width">
   <title>Jacob LeBaron</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    body {
-      background-image: url("gradient-background.jpg");
-      font-family: verdana, sans-serif;
-      color: white;
-      text-align: justify;
-    }
-
-    #haiku {
-      text-indent: 15px;
-      text-align: center;
-    }
-    .link {
-      text-decoration: none;
-    }
-    .link:hover {
-      text-decoration: underline;
-    }
-    a{
-      color: indianred;
-    }
-    img {
-      float: right;
-      margin: 0 0 20px 20px;
-    }
-    table {
-      margin-left: auto;
-      margin-right: auto;
-      border: 1px;
-      width: 90%;
-      border-spacing: 3px;
-      padding: 3px;
-    }
-    tr {
-      text-align: left;
-      width: 1%;
-    }
-    table, th, td {
-      background-color: palegreen;
-      color: black;
-      border: 1px black solid;
-    }
-    th {
-      text-align: center;
-    }
-    .work{
-     color: mediumpurple; 
-    }
-    #cs2550 {
-      color: salmon;
-    }
-    #info405g{
-      color: blue;
-    }
-    #mgmt3000 {
-      color: orange;
-    }
-    #info4430 {
-      color: red;
-    }
-    
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Trispace&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h1 style="text-decoration: underline overline dotted seagreen;">Jacob LeBaron</h1>
-      <img src="pfpa.jpg" alt="personal photo">
   <header>
-    <h2>Personal Info:</h2>
+    <div class="styled-div">
+      <h1 id="name">Jacob LeBaron</h1>
+    </div>
+  </header>
+  <div class="content">
+    <div class="modal-background" id="modalBackground">
+      <div class="modal-content">
+        <span class="close-box" id="closeBox">&times;</span>
+        <img src="pfpa.jpg" alt="personal photo" class="modal-image" id="modalImage">
+      </div>
+    </div>
+
+    <img src="pfpa.jpg" alt="personal photo" class="image" id="image">
+    <main>
+      <h2>Personal Info:</h2>
       <ul>
         <li><strong>Major:</strong><i> Information Systems in Application Development</i></li>
         <li><strong>Graduated Highschool:</strong><i> Bingham Highschool - 2018</i></li>
         <li><strong>College Experience:</strong><i> Senior, 4.5 years</i></li>
         <li><strong>Ice cream:</strong><i> Caramel Peacan</i></li>
       </ul>
-    <h2>Favorite Bookes</h2>
+      <h2>Favorite Bookes</h2>
       <ol>
         <li>Harry Potter, <a class="link" ref="https://www.jkrowling.com/">J. K. Rowling</a></li>
         <li>Artemis Fowl, <a class="link" href="https://www.eoincolfer.com/">Eoin Colfer</a></li>
         <li>Percy Jackson and the Olympians, <a class="link" href="https://rickriordan.com/">Rick Riordan</a></li>
         <li>Mistborn, <a class="link" href="https://www.brandonsanderson.com/">Brandon Sanderson</a></li>
       </ol>
-    <h2>Haiku: <i>Gaming with the Bros</i></h2>
+      <h2>Haiku: <i>Gaming with the Bros</i></h2>
       <p id="haiku">Victory shared, joy glows,<br>Bros united, triumph shows,<br>Game conquers, bonds grow.</p>
-    <h2>Personal Interests</h2>
-      <p>I've lived in utah my who life. Every now and then, my family would go up to BC Canada to see my grandparents and cousins there. It's neat since I'm a direct descendant of a canadian, I can soon get the paperwork for dual citizenship <br><br>I'm an avid fan of video games and just last month started learning more about chess. Been losing a lot in it though but hopefully can get good enough to comptete in the Salt Lake competition they have this summer! <br><br>I started at SLCC in highschool, by doing their JATC program with Web Development/Design. After highschool, I've been studying at UVU and see the light at the end of the tunnel with this being my last semester!</p>
-
-    <h2>My Schedule</h2>
-    <table>
-      <tr>
-        <th></th>
-        <th>Sunday</th>
-        <th>Monday</th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Thursday</th>
-        <th>Friday</th>
-        <th>Saturday</th>
-      </tr>
-      <tr>
-        <td>10:00</td>
-        <td class="work" rowspan="5">Work</td>
+      <h2>Personal Interests</h2>
+      <p>I've lived in utah my who life. Every now and then, my family would go up to BC Canada to see my grandparents
+        and
+        cousins there. It's neat since I'm a direct descendant of a canadian, I can soon get the paperwork for dual
+        citizenship <br><br>I'm an avid fan of video games and just last month started learning more about chess. Been
+        losing a lot in it though but hopefully can get good enough to comptete in the Salt Lake competition they have
+        this summer! <br><br>I started at SLCC in highschool, by doing their JATC program with Web Development/Design.
+        After highschool, I've been studying at UVU and see the light at the end of the tunnel with this being my last
+        semester!</p>
+      <h2>My Schedule</h2>
+      <table>
+        <tr>
+          <th></th>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <td>10:00</td>
+          <td id="sport" rowspan="5">Sport</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td id="mgmt3000" rowspan="3">MGMT 3000</td>
+        </tr>
+        <tr>
+          <td>11:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12:00</td>
+          <td></td>
+          <td id="info405g" rowspan="2" colspan="2">INFO-405G</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1:00</td>
+          <td></td>
+          <td id="cs2550" rowspan="2">CS 2550</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2:00</td>
+          <td id="work" rowspan="4">Work</td>
+          <td></td>
+          <td id="games" rowspan="4">Games</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3:00</td>
+          <td></td>
+          <td></td>
+          <td id="info4430" colspan="2">INFO 4430</td>
+          <td></td>
+        </tr>
+        <td>4:00</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-        <td id="mgmt3000" rowspan="3">MGMT 3000</td>
-      </tr>
-      <tr>
-        <td>11:00</td>
+        </tr>
+        <td>5:00</td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
         <td></td>
-      </tr>
-      <tr>
-        <td>12:00</td>
-        <td></td>
-        <td id="info405g" rowspan="2" colspan="2">INFO-405G</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1:00</td>
-        <td></td>
-        <td id="cs2550" rowspan="2">CS 2550</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2:00</td>
-        <td class="work" rowspan="4">Work</td>
-        <td></td>
-        <td class="work" rowspan="4">Work</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>3:00</td>
-        <td></td>
-                <td></td>
-        <td id="info4430" colspan="2">INFO 4430</td>
-        <td></td>
-      </tr>
-      <td>4:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <td>5:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-  </header>
+        </tr>
+      </table>
+    </main>
+  </div>
   <script src="script.js">
   </script>
 
